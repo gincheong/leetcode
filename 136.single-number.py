@@ -7,26 +7,14 @@ from typing import List
 # @lc code=start
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
-        # number = 0
+        result = 0
 
-        # for each in nums:
-        #     number ^= each
-            
-        # return number
-
-        nums.sort()
-
-        for i in range(1, len(nums)-1):
-            if nums[i] != nums[i-1] and nums[i] != nums[i+1]:
-                return nums[i]
+        for each in nums:
+            result = result ^ each
+            # XOR 비트 연산
         
-        if len(nums) > 1:
-            if nums[0] != nums[1]:
-                return nums[0]
-            else:
-                return nums[-1]
-        else:
-            return nums[0]
+        return result
+    
 # @lc code=end
 
 for each in [[2,2,1], [4,1,2,1,2], [1]]:
