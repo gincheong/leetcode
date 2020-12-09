@@ -12,16 +12,17 @@ class ListNode:
         self.next = next
 class Solution:
     def reverseList(self, head: ListNode) -> ListNode:
-        prev = None
+        newHead = ListNode()
+
         current = head
         while current != None:
-            next = current.next
-            current.next = prev
-            prev = current
-            current = next
-            print(prev)
+            tempNext = newHead.next
+            newHead.next = current
+            
+            current = current.next
+            newHead.next.next = tempNext
+        
+        return newHead.next
 
-        return prev
-##
 # @lc code=end
 

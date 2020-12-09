@@ -14,32 +14,21 @@ class Solution:
     def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
 
         head = ListNode(0)        
-        prev = head
+        current = head
 
-        # get minValue
-        if l1 == None and l2 == None:
-            return None
-        elif l1 == None:
-            minValue = l2.val
-        elif l2 == None:
-            minValue = l1.val
-        else:
-            minValue = min(l1.val, l2.val)
+        while l1 != None and l2 != None:
+            # 둘 중 한 연결리스트라도 다 탐색하면 종료
 
-        for number in range(minValue, 100 + 1):
-            while l1 != None and l1.val == number:
-                prev.next = l1
-                prev = l1
+            if l1.val < l2.val:
+                current.next = l1
                 l1 = l1.next
-
-            while l2 != None and l2.val == number:
-                prev.next = l2
-                prev = l2
+            else:
+                current.next = l2
                 l2 = l2.next
-
-            if l1 == None and l2 == None:
-                break
+            current = current.next
         
-        return head.next
+        current.next = l1 or l2
+        # 둘 중 하나가 None이면 None 아닌 쪽이 반환됨
 
+        return head.next
 # @lc code=end
