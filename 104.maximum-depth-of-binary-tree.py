@@ -14,14 +14,13 @@ class TreeNode:
         self.right = right
 class Solution:
     def maxDepth(self, root: TreeNode) -> int:
+        isExistLeft = isExistRight = 0
         if root:
-            l = r = 0
             if root.left:
-                l = self.maxDepth(root.left)
+                isExistLeft = self.maxDepth(root.left)
             if root.right:
-                r = self.maxDepth(root.right)
-            
-            return max(l, r) + 1
+                isExistRight = self.maxDepth(root.right)
+            return max(isExistLeft, isExistRight) + 1
         return 0
 
 # @lc code=end

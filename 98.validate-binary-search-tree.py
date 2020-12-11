@@ -13,7 +13,20 @@ class TreeNode:
         self.right = right
 class Solution:
     def isValidBST(self, root: TreeNode) -> bool:
-    
-        pass
-# @lc code=end
+        MIN_VALUE = -2**31 - 1
+        MAX_VALUE = 2**31
+        return self.validate(root, MIN_VALUE, MAX_VALUE)
 
+    def validate(self, node: TreeNode, minVal: int, maxVal: int) -> bool:
+        leftValidation = rightValidation = True
+
+        if node:
+            if node.val <= minVal or node.val >= maxVal:
+                return False
+
+            leftValidation = self.validate(node.left, minVal, node.val)
+            rightValidation = self.validate(node.right, node.val, maxVal)
+
+        return leftValidation and rightValidation
+
+# @lc code=end
