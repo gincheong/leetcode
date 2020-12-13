@@ -3,16 +3,19 @@
 #
 # [1] Two Sum
 #
-
+from typing import List
 # @lc code=start
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        for i, a in enumerate(nums):
-            for j, b in enumerate(nums):
-                if i != j and (a+b) == target:
-                    return [i, j]
-                    
-
         
+        for idx, val in enumerate(nums):
+            tempTarget = target - val
+            if tempTarget in nums and nums.index(tempTarget) != idx:
+                return [idx, nums.index(tempTarget)]
+
 # @lc code=end
 
+"""
+time: O(n)
+space: O(n)
+"""
