@@ -13,40 +13,22 @@ class TreeNode:
 # @lc code=start
 class Solution:
     def sortedArrayToBST(self, nums: List[int]) -> TreeNode:
-        return self.repeat(nums, 0, len(nums))            
-    
-    def repeat(self, nums: List[int], left: int, right: int) -> TreeNode:
-        if left == right:
+        return self.repeat(nums)
+
+    def repeat(self, nums: List[int]) -> TreeNode:
+        if len(nums) == 0:
             return None
+        half = len(nums) // 2
 
-        half = (right + left) // 2
+        left = nums[:half]
+        center = nums[half]
+        right = nums[half + 1:]
 
-        node = TreeNode(nums[half])
-        node.left = self.repeat(nums, left, half)
-        node.right = self.repeat(nums, half + 1, right)
+        node = TreeNode(center)
+        node.left = self.repeat(left)
+        node.right = self.repeat(right)
 
         return node
-
-
-    #     leftNums, rootNum, rightNums = self.splitList(nums)
-
-    #     rootNode = TreeNode(rootNum)
-    #     rootNode.left = self.sortedArrayToBST(leftNums)
-    #     rootNode.right = self.sortedArrayToBST(rightNums)
-
-    #     return rootNode
-
-    # def splitList(self, nums: List[int]) -> (List[int], int, List[int]):
-    #     # split하면 총 시간이 O(nlogn)
-    #     # 분할하는 데 logn, 분할한 각 항목에 대해 연산을 계속 실행하므로 결과적으로 nlogn
-
-    #     half = len(nums) // 2
-
-    #     left = nums[:half]
-    #     center = nums[half]
-    #     right = nums[half + 1:]
-
-    #     return (left, center, right)
 
 # @lc code=end
 
