@@ -3,7 +3,7 @@
 #
 # [278] First Bad Version
 #
-from math import ceil
+
 # @lc code=start
 # The isBadVersion API is already defined for you.
 # @param version, an integer
