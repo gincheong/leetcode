@@ -7,25 +7,9 @@
 # @lc code=start
 class Solution:
     def longestPalindrome(self, s: str) -> str:
-        asd = ""
-        for each in s:
-            if s.count(each) > 1:
-                asd += each
-            else:
-                asd += "#"
-        print(asd)
-
-    def sliceString(self, string: str) -> (str, str):
-        half = len(string) // 2
-        if len(string) % 2 == 0:
-            # 짝수길이
-            print(string[:half], string[half:])
-        else:
-            # center = string[half]
-            print(string[:half], string[half+1:])
-        
+       # manacher's algorithm
+       # 봐도 머리에 잘 안 들어오네 미치겠네
+            
 # @lc code=end
 
-s = Solution()
-for each in ["babad", "cbbd", "ac", "a", "dasdfdsaas"]:
-    s.longestPalindrome(each)
+print(Solution.longestPalindrome(None, 'cbbd'))
