@@ -5,33 +5,41 @@
  */
 
 // Definition for a binary tree node.
-function TreeNode(val, left, right) {
-  this.val = (val===undefined ? 0 : val)
-  this.left = (left===undefined ? null : left)
-  this.right = (right===undefined ? null : right)
+class TreeNode { 
+  constructor(val, left, right) {
+    this.val = (val===undefined ? 0 : val)
+    this.left = (left===undefined ? null : left)
+    this.right = (right===undefined ? null : right)
+  }
 }
 
 // @lc code=start
 /**
- * @param {TreeNode} root
+ * @param {TreeNode} node
+ * @param {number} left
+ * @param {number} right
  * @return {boolean}
  */
-var isValidBST = function(root) {
-  let min = (-2)**31 - 1
-  let max = 2**31
-  return validate(root, min, max);
-};
-
-var validate = (node, min, max) => {
+const validate = (node, left, right) => {
   if (node === null) {
     return true;
   }
-  
-  if (node.val <= min || node.val >= max) {
-    return false;
-  } 
 
-  return validate(node.left, min, node.val) && validate(node.right, node.val, max);
+  if (node.val > left && node.val < right) {
+    return (validate(node.left, left, node.val)
+      && validate(node.right, node.val, right))
+  } else {
+    return false;
+  }
 };
+
+/**
+ * @param {TreeNode} root
+ * @return {boolean}
+ */
+const isValidBST = (root) => {
+  return validate(root, Math.pow(-2, 31) - 1, Math.pow(2, 31));
+};
+
 // @lc code=end
 

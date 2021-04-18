@@ -5,28 +5,34 @@
  */
 
 // Definition for a binary tree node.
-function TreeNode(val, left, right) {
-  this.val = (val===undefined ? 0 : val)
-  this.left = (left===undefined ? null : left)
-  this.right = (right===undefined ? null : right)
+class TreeNode {
+  constructor(val, left, right) {
+    this.val = (val === undefined ? 0 : val);
+    this.left = (left === undefined ? null : left);
+    this.right = (right === undefined ? null : right);
+  }
 }
+
 // @lc code=start
+
+/**
+ * @param {TreeNode} node
+ * @param {number} depth
+ * @return {number}
+ */
+const repeat = (node, depth = 0) => {
+  if (node === null) {
+    return depth;
+  }
+  return Math.max(repeat(node.left, depth + 1), repeat(node.right, depth + 1));
+};
+
 /**
  * @param {TreeNode} root
  * @return {number}
  */
-var maxDepth = function(root) {
-  return search(root, 0);
+const maxDepth = (root) => {
+  return repeat(root);
 };
-
-var search = (node, depth) => {
-  if (node === null) {
-    return depth;
-  }
-
-  depth++;
-  return Math.max(search(node.left, depth), search(node.right, depth));
-};
-
 // @lc code=end
 
