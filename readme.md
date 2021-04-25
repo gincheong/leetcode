@@ -16,3 +16,6 @@ LeetCode 홈페이지의 Explore 탭을 눌러 이동하면, 문제 모음집들
 ### Top Interview Questions
 - [Easy Collection](./Top%20Interview%20Questions/1.%20Easy%20Collection.md)
 - [Medium Collection](./Top%20Interview%20Questions/2.%20Medium%20Collection.md)
+
+### Arrays 101
+- [Arrays 101](./Arrays%20101/Arrays%20101.md)
