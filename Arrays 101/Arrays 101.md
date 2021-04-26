@@ -28,3 +28,14 @@
 |-----:|---------------------------------|:----------:|
 | 1346 | Check If N and Its Double Exist |  21.04.25  |
 |  941 | Valid Mountain Array            |  21.04.25  |
+
+### In-Place Operations 
+
+|   No | Name                                                 | Javascript |
+|-----:|------------------------------------------------------|:----------:|
+| 1299 | Replace Elements with Greatest Element on Right Side |  21.04.26  |
+|   26 | Remove Duplicates from Sorted Array                  | Duplicated |
+|  283 | Move Zeroes                                          |  21.04.25  |
+|  905 | Sort Array By Parity                                 |  21.04.26  |
+|   27 | Remove Element                                       | Duplicated |
+
