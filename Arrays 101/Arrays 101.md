@@ -39,3 +39,11 @@
 |  905 | Sort Array By Parity                                 |  21.04.26  |
 |   27 | Remove Element                                       | Duplicated |
 
+### Conclusion
+
+|   No | Name                                     | Javascript |
+|-----:|------------------------------------------|:----------:|
+| 1051 | Height Checker                           |  21.04.26  |
+|  414 | Third Maximum Number                     |  21.04.26  |
+|  448 | Find All Numbers Disappeared in an Array |  21.04.26  |
+|  977 | Squares of a Sorted Array                | Duplicated |
