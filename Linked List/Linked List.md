@@ -13,3 +13,5 @@
 | 141 | Linked List Cycle                |  21.04.26  |
 | 142 | Linked List Cycle II             |     -      |
 | 160 | Intersection of Two Linked Lists |  21.04.27  |
+|  19 | Remove Nth Node From End of List |  21.04.27  |
+
