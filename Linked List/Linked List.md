@@ -38,3 +38,4 @@
 |   2 | Add Two Numbers                         |  21.04.28  |
 | 430 | Flatten a Multilevel Doubly Linked List |  21.04.28  |
 | 138 | Copy List with Random Pointer           |  21.04.28  |
+|  61 | Rotate List                             |  21.04.29  |
