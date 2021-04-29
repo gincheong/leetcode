@@ -13,15 +13,9 @@ LeetCode 홈페이지의 Explore 탭을 눌러 이동하면, 문제 모음집들
 
 각 링크를 클릭하면 문제풀이 현황을 볼 수 있습니다.
 
-### Top Interview Questions
-- [Easy Collection](./Top%20Interview%20Questions/1.%20Easy%20Collection.md)
-- [Medium Collection](./Top%20Interview%20Questions/2.%20Medium%20Collection.md)
-
-### Arrays 101
-- [Arrays 101](./Arrays%20101/Arrays%20101.md)
-
-### Linked List
-- [Linked List](./Linked%20List/Linked%20List.md)
-
-### Binary Tree
-- [Binary Tree](./Binary%20Tree/Binary%20Tree.md)
+### Explore 
+- [Top Interview Questions](./Top%20Interview%20Questions/readme.md)
+- [Arrays 101](./Arrays%20101/readme.md)
+- [Linked List](./Linked%20List/readme.md)
+- [Binary Tree](./Binary%20Tree/readme.md)
+- [N-ary Tree](./N-ary%20Tree/readme.md)
