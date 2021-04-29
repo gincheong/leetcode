@@ -24,4 +24,4 @@ LeetCode 홈페이지의 Explore 탭을 눌러 이동하면, 문제 모음집들
 - [Linked List](./Linked%20List/Linked%20List.md)
 
 ### Binary Tree
-- [Binary Tree](./Binary%20Tree/Binary%20Tree.md);
+- [Binary Tree](./Binary%20Tree/Binary%20Tree.md)
