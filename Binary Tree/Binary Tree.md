@@ -9,3 +9,11 @@
 | 145 | Binary Tree Postorder Traversal   |  21.04.29  |
 | 102 | Binary Tree Level Order Traversal |  21.04.29  |
 
+### Solve Tree Problems Recursively
+
+|  No | Name                         | Javascript |
+|----:|------------------------------|:----------:|
+| 104 | Maximum Depth of Binary Tree |  21.04.29  |
+| 101 | Symmetric Tree               |  21.04.29  |
+| 112 | Path Sum                     |  21.04.29  |
+
