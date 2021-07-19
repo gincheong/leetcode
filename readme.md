@@ -1,7 +1,7 @@
 # Leetcode
 [LeetCode.com](https://leetcode.com) 의 알고리즘 문제를 풀이한 내용들입니다.
 
-Javscript, Python, C++를 사용해서 문제를 풀고 있습니다.
+Javscript, Python, C++, Java를 사용해서 문제를 풀고 있습니다.
 
 LeetCode는 Visual Studio Code의 Extension을 통해서, IDE 내에서 문제풀이를 하고 LeetCode에 답안을 제출할 수 있습니다.
 
